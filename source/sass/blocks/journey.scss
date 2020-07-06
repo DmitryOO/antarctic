@@ -62,12 +62,12 @@
   }
 
   .journey__description {
-    width: auto;
+    width: 324px;
     padding-top: 0;
   }
 
   .journey h2 {
-    width: auto;
+    white-space: pre-wrap;
     font-weight: 600;
     font-size: 26px;
     line-height: 140%;
@@ -109,6 +109,7 @@
   }
 
   .journey h2 {
+    white-space: normal;
     width: 190px;
     font-weight: 600;
     font-size: 24px;
