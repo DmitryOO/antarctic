@@ -47,6 +47,10 @@
   margin-top: 0;
 }
 
+.page-header__logo--mobile-menu {
+  display: none;
+}
+
 @media (max-width: $tablet-width) {
   .page-header {
     min-height: 638px;

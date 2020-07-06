@@ -100,6 +100,9 @@ body {
   margin-left: 198px;
   margin-top: 0; }
 
+.page-header__logo--mobile-menu {
+  display: none; }
+
 @media (max-width: 1023px) {
   .page-header {
     min-height: 638px;
