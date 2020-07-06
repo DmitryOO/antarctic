@@ -1,7 +1,7 @@
 .page-header {
   min-height: 650px;
   font-family: "Montserrat", "Arial", sans-serif;
-  color: $textlight;
+  color: $lightcol;
   background-image: url("./../../img/background_desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,7 +27,13 @@
 
 .page-header__top-block a {
   text-decoration: none;
-  color: $textlight;
+  color: $lightcol;
+}
+
+.page-header__top-block a:active,
+.page-header__top-block a:focus,
+.page-header__top-block a:hover {
+  opacity: 0.8;
 }
 
 .page-header__tours h1 {
@@ -124,7 +130,7 @@
     z-index: 10;
 
     a {
-      color: $textdark;
+      color: $darkcol;
     }
   }
 

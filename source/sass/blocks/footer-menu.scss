@@ -1,0 +1,36 @@
+.footer-menu {
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-menu__item {
+  padding-right: 34px;
+}
+
+.footer-menu__item a {
+  text-decoration: none;
+  color: $lightcol;
+}
+
+.footer-menu__item a:hover,
+.footer-menu__item a:focus,
+.footer-menu__item a:active {
+  opacity: 0.8;
+}
+
+@media (max-width: $tablet-width) {
+  .footer-menu__item {
+    padding-right: 23px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .footer-menu {
+    padding-left: 0;
+    margin-top: 17px;
+    margin-bottom: 18px;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}
