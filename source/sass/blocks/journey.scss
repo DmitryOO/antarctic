@@ -1,0 +1,122 @@
+.journey {
+  min-height: 540px;
+  min-width: 512px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: $darkcol;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: 103px;
+  padding-right: 103px;
+  background-color: $lightcol;
+  display: flex;
+}
+
+.journey__image {
+  margin-left: 88px;
+  width: 560px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.journey__image img {
+  width: 680px;
+  position: relative;
+  left: -100px;
+  bottom: 36px;
+}
+
+
+.journey__description {
+  width: 512px;
+  padding-top: 34px;
+}
+
+.journey__description h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+}
+
+@media (max-width: $tablet-width) {
+  .journey {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .journey__image {
+    margin-left: 30px;
+    width: 324px;
+    height: 264px;
+  }
+
+  .journey__image img {
+    width: 468px;
+    position: relative;
+    left: -71px;
+    bottom: 0;
+  }
+
+  .journey__description {
+    width: auto;
+    padding-top: 0;
+  }
+
+  .journey h2 {
+    width: auto;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 140%;
+    margin-top: -10px;
+    margin-bottom: 0;
+  }
+
+  .journey p {
+    white-space: pre-wrap;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .journey {
+    min-width: 320px;
+    padding-top: 67px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-direction: column;
+  }
+
+  .journey__image {
+    width: 290px;
+    height: 186px;
+    margin-left: 0;
+  }
+
+  .journey__image img {
+    width: 333px;
+    left: -22px;
+    top: 0;
+    position: relative;
+  }
+
+  .journey__description {
+    width: 290px;
+    padding-top: 0;
+    margin-bottom: 17px;
+  }
+
+  .journey h2 {
+    width: 190px;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: -10px;
+    margin-bottom: 0;
+  }
+
+  .journey p {
+    white-space: normal;
+  }
+}
