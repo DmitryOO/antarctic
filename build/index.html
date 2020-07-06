@@ -10,31 +10,36 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="./img/logo.svg" width="70" height="38" alt="logo">
-      </a>
-      <ul class="page-header__menu header-menu">
-        <li class="header-menu__item">
-          <a href="#">Преимущества</a>
-        </li>
-        <li class="header-menu__item">
-          <a href="#">Направления</a>
-        </li>
-        <li class="header-menu__item">
-          <a href="#">Ближайшие круизы</a>
-        </li>
-        <li class="header-menu__item">
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
-      <button class="page-header__toggle page-header__toggle--open visually-hidden" type="button">Открыть меню</button>
-      <button class="page-header__toggle page-header__toggle--close visually-hidden" type="button">Закрыть меню</button>
+      <section class="page-header__top-block">
+        <a class="page-header__logo">
+          <img src="./img/logo.svg" width="70" height="38" alt="logo">
+        </a>
+        <a class="page-header__logo page-header__logo--mobile-menu" display="none">
+          <img src="./img/logo-mobile-blue.svg" width="70" height="38" alt="logo">
+        </a>
+        <ul class="page-header__menu header-menu">
+          <li class="header-menu__item">
+            <a href="#">Преимущества</a>
+          </li>
+          <li class="header-menu__item header-menu__item--way">
+            <a href="#">Направления</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#">Ближайшие круизы</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <button class="page-header__toggle page-header__toggle--open visually-hidden" type="button">Открыть меню</button>
+        <button class="page-header__toggle page-header__toggle--close visually-hidden" type="button">Закрыть меню</button>
+      </section>
+      <section class="page-header__tours">
+        <h1>Круизы                                                                      в Антарктику</h1>
+        <p>Волшебный мир                                                                       айсбергов и пингвинов</p>
+      </section>
     </header>
     <main>
-      <section class="tours">
-        <h1>Круизы в Антарктику</h1>
-        <p>Волшебный мир айсбергов и пингвинов</p>
-      </section>
       <section class="journey">
         <h2>Путешествие на край Земли</h2>
         <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики.
@@ -62,7 +67,7 @@
         <h2>Ближайшие круизы</h2>
         <ul class="cruises__list">
           <li class="cruises__item">
-            <img src="./img/astoria_desktop.jpg" width="309" height="386" alt="астория">
+            <img src="./img/astoria.jpg" width="260" height="386" alt="астория">
             <p>Круиз “Астория”</p>
               <div class="cruises__info">
                 <h3>Круиз "Астория"</h3>
@@ -88,7 +93,7 @@
               </div>
           </li>
           <li class="cruises__item">
-            <img src="./img/astoria_desktop.jpg" width="309" height="386" alt="астория">
+            <img src="./img/astoria.jpg" width="260" height="386" alt="астория">
             <p>Круиз “Элайн”</p>
               <div class="cruises__info">
                 <h3>Круиз “Элайн”</h3>
@@ -114,7 +119,7 @@
               </div>
           </li>
           <li class="cruises__item">
-            <img src="./img/atlantis_desktop.jpg" width="309" height="386" alt="атлантис">
+            <img src="./img/atlantis.jpg" width="260" height="386" alt="атлантис">
             <p>Круиз “Атлантис”</p>
               <div class="cruises__info">
                 <h3>Круиз “Атлантис”</h3>
@@ -140,7 +145,7 @@
               </div>
           </li>
           <li class="cruises__item">
-            <img src="./img/odysseus_desktop.jpg" width="309" height="386" alt="одиссей">
+            <img src="./img/odyssey.jpg" width="260" height="386" alt="одиссей">
             <p>Круиз “Одиссей”</p>
               <div class="cruises__info">
                 <h3>Круиз “Одиссей”</h3>
@@ -166,7 +171,7 @@
               </div>
           </li>
           <li class="cruises__item">
-            <img src="./img/olympia_desktop.jpg" width="309" height="386" alt="олимпия">
+            <img src="./img/olympia.jpg" width="260" height="386" alt="олимпия">
             <p>Круиз “Олимпия”</p>
               <div class="cruises__info">
                 <h3>Круиз “Олимпия”</h3>
@@ -192,7 +197,7 @@
               </div>
           </li>
           <li class="cruises__item">
-            <img src="./img/aurora_desktop.jpg" width="309" height="386" alt="аврора">
+            <img src="./img/aurora.jpg" width="260" height="386" alt="аврора">
             <p>Круиз “Аврора”</p>
               <div class="cruises__info">
                 <h3>Круиз “Аврора”</h3>
@@ -218,7 +223,7 @@
               </div>
           </li>
           <li class="cruises__item">
-            <img src="./img/leonor_desktop.jpg" width="309" height="386" alt="леонор">
+            <img src="./img/leonor.jpg" width="260" height="386" alt="леонор">
             <p>Круиз “Леонор”</p>
               <div class="cruises__info">
                 <h3>Круиз “Леонор”</h3>
@@ -244,7 +249,7 @@
               </div>
           </li>
           <li class="cruises__item">
-            <img src="./img/minion_desktop.jpg" width="309" height="386" alt="минион-1">
+            <img src="./img/minion.jpg" width="260" height="386" alt="минион-1">
             <p>Круиз “Минион - 1”</p>
               <div class="cruises__info">
                 <h3>Круиз “Минион - 1”</h3>

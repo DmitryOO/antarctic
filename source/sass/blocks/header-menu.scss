@@ -1,0 +1,30 @@
+.header-menu {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-menu__item {
+  margin-left: 34px;
+}
+
+@media (max-width: $tablet-width) {
+  .header-menu__item {
+    margin-left: 24px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .header-menu {
+    flex-direction: column;
+  }
+
+  .header-menu__item {
+    margin-left: 15px;
+    margin-bottom: 21px;
+  }
+
+  .header-menu__item--way {
+    order: -1;
+  }
+}
