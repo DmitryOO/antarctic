@@ -36,6 +36,10 @@
   margin-right: 0;
 }
 
+.cruises__item:nth-last-child(1) {
+  margin-right: 0;
+}
+
 .cruises__gradient {
   width: 100%;
   height: 100%;
@@ -142,6 +146,10 @@
 }
 
 .cruises__button {
+  display: table-cell;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
   width: 210px;
   height: 40px;
   margin-top: 10px;
@@ -159,6 +167,16 @@
   opacity: 0.8;
 }
 
+@media (max-width: 1129px) {
+  .cruises__item:nth-child(4n) {
+    margin-right: 30px;
+  }
+
+  .cruises__item:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .cruises {
     padding-top: 80px;
@@ -171,6 +189,16 @@
   .cruises__image {
     width: 309px;
     height: 386px;
+  }
+
+  .cruises__item:nth-child(3n) {
+    margin-right: 30px;
+  }
+
+  .cruises__list {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .cruises__item:nth-child(2n) {
@@ -192,7 +220,8 @@
 
   .cruises__image--odyssey img {
     width: 600px;
-    top: 3px;
+    height: 460px;
+    top: -3px;
     left: -106px;
   }
 
@@ -208,9 +237,10 @@
   }
 
   .cruises__image--leonor img {
-    height: 380px;
-    width: 577px;
-    left: -159px;
+    height: 386px;
+    width: 597px;
+    left: -168px;
+    top: 0;
   }
 
   .cruises__image--minion img {
@@ -233,6 +263,12 @@
     padding-top: 48px;
   }
 
+  .cruises__list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
   .cruises h2 {
     font-size: 24px;
     margin-bottom: 40px;
@@ -242,8 +278,13 @@
     width: 270px;
   }
 
+  .cruises__item:nth-child(3n) {
+    margin-right: 0;
+  }
+
   .cruises__item {
     margin-right: 0;
+    max-width: 270px;
   }
 
   .cruises__info {
