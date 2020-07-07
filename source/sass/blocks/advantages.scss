@@ -159,6 +159,7 @@
     padding-right: 15px;
     padding-left: 15px;
     padding-top: 57px;
+    padding-bottom: 20px;
     background-image: url("./../../img/advantages_mobile.png");
   }
 
@@ -195,5 +196,9 @@
 
   .advantages__item--check p {
     padding-right: 0;
+  }
+
+  .advantages__description {
+    line-height: 149%;
   }
 }
