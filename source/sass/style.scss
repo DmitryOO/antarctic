@@ -1,6 +1,7 @@
 @import "fonts.scss";
 @import "variables.scss";
 @import "general.scss";
+@import "mixins.scss";
 @import "blocks/page-header.scss";
 @import "blocks/header-menu.scss";
 @import "blocks/page-footer.scss";
@@ -9,4 +10,5 @@
 @import "blocks/journey.scss";
 @import "blocks/advantages.scss";
 @import "blocks/cruises.scss";
-@import "blocks/map.scss"
+@import "blocks/map.scss";
+@import "blocks/booking.scss"

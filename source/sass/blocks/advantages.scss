@@ -3,7 +3,7 @@
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 140%;
+  line-height: 20px;
   color: $darkcol;
   display: flex;
   flex-direction: column;
@@ -85,6 +85,10 @@
   top: -47px;
 }
 
+.advantages__item p {
+  margin-top: 8px;
+}
+
 
 @media (max-width: $tablet-width) {
   .advantages {
@@ -102,6 +106,10 @@
 
   .advantages h2 {
     font-size: 26px;
+  }
+
+  .advantages__description {
+    margin-top: 17px;
   }
 
   .advantages__item {
@@ -145,7 +153,7 @@
     padding-right: 20px;
   }
 
-  .advantages__description--boat p {
+  .advantages__item--boat p {
     padding-right: 10px;
   }
 

@@ -70,6 +70,7 @@
 
 @media (max-width: $tablet-width) {
   .map {
+    min-height: 535px;
     padding-right: 45px;
     padding-left: 45px;
   }
@@ -83,7 +84,7 @@
   }
 
   .map__questions {
-    margin-top: 29px;
+    margin-top: 23px;
   }
 }
 

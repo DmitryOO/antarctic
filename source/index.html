@@ -54,11 +54,11 @@
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--ship">
             <h3 class="advantages__description advantages__description--ship">Небольшой круизный лайнер</h3>
-            <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и&nbsp;очередей и даст возможность насладиться видами и природой.</p>
+            <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и&nbsp;очередей&nbsp;и даст возможность насладиться видами и природой.</p>
           </li>
           <li class="advantages__item advantages__item--check">
             <h3 class="advantages__description advantages__description--check">Система все&nbsp;включено</h3>
-            <p>Все наши круизы работают по&nbsp;системе “Все Включено”.         Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
+            <p>Все наши круизы работают по&nbsp;системе “Все Включено”.         Великолепные блюда и&nbsp;безлимитный бар доступны для&nbsp;вас 24&nbsp;часа.</p>
           </li>
           <li class="advantages__item advantages__item--boat">
             <h3 class="advantages__description advantages__description--boat">Экскурсионные туры&nbsp;на&nbsp;Zodiac</h3>
@@ -304,25 +304,26 @@
         </ul>
       </section>
       <section class="booking">
-        <h2>Раннее бронирование</h2>
-        <p>Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
+        <div class="booking__info">
+          <h2>Раннее бронирование</h2>
+          <p>Забронируйте тур за&nbsp;3<span>&nbsp;</span>-<span>&nbsp;</span>6&nbsp;месяцев до&nbsp;даты&nbsp;выезда и сэкономьте до 50%</p>
+        </div>
         <form>
-          <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+          <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</p>
           <ul>
             <li>
               <input type="text" name="name" placeholder="Имя">
             </li>
             <li>
-              <input type="tel" name="tel" placeholder="Телефон">
+              <input type="tel" name="tel" pattern="(\+\d{7,12})|\d{7,12}" placeholder="Телефон">
             </li>
             <li>
               <input type="email" name="mail" placeholder="E-mail">
             </li>
           </ul>
-          <label>
-            <input type="checkbox" name="agreement" value="yes" checked>Я согласен на обработку моих персональных данных
-          </label>
-          <input type="submit" value="оставить заявку">
+          <input type="checkbox" id="agree" name="agree" value="yes">
+          <label for="agree">Я согласен на обработку моих&nbsp;персональных данных</label>
+          <input type="submit" value="Оставить заявку">
         </form>
       </section>
       <section class="map">

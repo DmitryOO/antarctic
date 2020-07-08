@@ -21,6 +21,7 @@
 }
 
 .cruises__list {
+  margin-bottom: 90px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -146,19 +147,10 @@
 }
 
 .cruises__button {
-  display: table-cell;
-  text-decoration: none;
-  text-align: center;
-  vertical-align: middle;
+  @include button;
   width: 210px;
   height: 40px;
   margin-top: 10px;
-  background-color: $lightcol;
-  border: none;
-  color: $darkcol;
-  font-weight: 600;
-  font-size: 14px;
-  cursor: pointer;
 }
 
 .cruises__button:hover,
@@ -173,6 +165,10 @@
   }
 
   .cruises__item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .cruises__item:nth-last-child(1) {
     margin-right: 0;
   }
 }
@@ -195,10 +191,16 @@
     margin-right: 30px;
   }
 
+  .cruises__item:nth-last-child(1) {
+    margin-right: 0;
+  }
+
   .cruises__list {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
+    padding-bottom: 67px;
   }
 
   .cruises__item:nth-child(2n) {
@@ -267,6 +269,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    padding-bottom: 35px;
   }
 
   .cruises h2 {
