@@ -60,6 +60,36 @@ body {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.page-header__toggle--open {
+  width: 25px;
+  height: 20px;
+  position: absolute;
+  top: 24px;
+  right: 14px;
+  border: none;
+  background-image: url("./../../img/icon-menu.svg");
+  background-repeat: no-repeat;
+  background-color: transparent; }
+
+.page-header__toggle--close {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 24px;
+  right: 14px;
+  border: none;
+  background-image: url("./../../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-color: transparent; }
+
+.page-header__toggle {
+  display: none; }
+
+.page-header__toggle:hover,
+.page-header__toggle:focus,
+.page-header__toggle:hover:active {
+  opacity: 0.8; }
+
 .page-header ul {
   list-style: none; }
 
@@ -68,6 +98,7 @@ body {
   padding-top: 55px;
   margin-left: 103px;
   margin-right: 103px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
