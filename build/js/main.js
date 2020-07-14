@@ -14,7 +14,7 @@
     openButton.style.display = 'block';
     closeButton.style.display = 'none';
     header.style.backgroundColor = 'transparent';
-    closeButton.setAttribute('disabled');
+    closeButton.setAttribute('disabled', 'disabled');
   };
   var openMenu = function () {
     header.style.backgroundColor = '#e5e5e5';
@@ -49,8 +49,8 @@
       headerMenu.style.display = 'flex';
       openButton.style.display = 'none';
       closeButton.style.display = 'none';
-      closeButton.setAttribute('disabled');
-      openButton.setAttribute('disabled');
+      closeButton.setAttribute('disabled', 'disabled');
+      openButton.setAttribute('disabled', 'disabled');
     }
   };
   window.addEventListener('resize', onResizeJS);
