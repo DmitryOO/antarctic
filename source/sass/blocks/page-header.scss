@@ -49,8 +49,9 @@
 .page-header__top-block {
   height: 38px;
   padding-top: 55px;
-  margin-left: 103px;
-  margin-right: 103px;
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -59,6 +60,12 @@
   font-size: 16px;
   line-height: 20px;
   background-color: transparent;
+}
+
+.page-header__tours {
+  max-width: 974px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-header__top-block a {
@@ -76,7 +83,6 @@
   font-weight: bold;
   font-size: 54px;
   line-height: 66px;
-  margin-left: 198px;
   margin-top: 215px;
   margin-bottom: 12px;
 }
@@ -85,7 +91,6 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  margin-left: 198px;
   margin-top: 0;
 }
 

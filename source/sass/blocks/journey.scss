@@ -1,16 +1,23 @@
 .journey {
-  min-height: 540px;
-  min-width: 512px;
+  width: 100%;
   font-family: "Montserrat", "Arial", sans-serif;
   color: $darkcol;
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
+  background-color: $lightcol;
+}
+
+.journey__wrapper {
+  min-height: 540px;
+  min-width: 512px;
+  max-width: 1366px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 120px;
   padding-bottom: 120px;
   padding-left: 103px;
   padding-right: 103px;
-  background-color: $lightcol;
   display: flex;
 }
 
@@ -41,7 +48,8 @@
 }
 
 @media (max-width: $tablet-width) {
-  .journey {
+  .journey__wrapper {
+    max-width: 768px;
     min-height: 464px;
     padding-top: 100px;
     padding-bottom: 78px;
@@ -82,8 +90,9 @@
 }
 
 @media (max-width: $mobile-width) {
-  .journey {
+  .journey__wrapper {
     min-width: 320px;
+    width: 320px;
     padding-top: 67px;
     padding-left: 15px;
     padding-right: 15px;

@@ -37,11 +37,11 @@
     openButton.style.display = 'block';
     openButton.addEventListener('click', openMenu);
   };
-  if (window.innerWidth <= 768) {
+  if (window.innerWidth < 768) {
     activateJS();
   }
   var onResizeJS = function () {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth < 768) {
       activateJS();
     } else {
       header.style.backgroundColor = 'transparent';

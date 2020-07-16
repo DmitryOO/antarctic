@@ -28,16 +28,16 @@
         </a>
         <ul class="page-header__menu header-menu">
           <li class="header-menu__item">
-            <a href="#">Преимущества</a>
+            <a href="#advantages">Преимущества</a>
           </li>
           <li class="header-menu__item header-menu__item--way">
-            <a href="#">Направления</a>
+            <a href="#booking">Направления</a>
           </li>
           <li class="header-menu__item">
-            <a href="#">Ближайшие круизы</a>
+            <a href="#cruises">Ближайшие круизы</a>
           </li>
           <li class="header-menu__item">
-            <a href="#">Контакты</a>
+            <a href="#contacts">Контакты</a>
           </li>
         </ul>
         <button class="page-header__toggle page-header__toggle--open" disabled="" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -50,15 +50,17 @@
     </header>
     <main>
       <section class="journey">
-        <div class="journey__description">
-          <h2>Путешествие                                                          на край Земли</h2>
-          <p>Это волшебное путешествие поможет вам познакомиться поближе                            с удивительным миром Антарктики. Наш круизный лайнер отвезет вас        на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
-        </div>
-        <div class="journey__image">
-          <img src="./img/pinguins.jpg" alt="пингвины">
+        <div class="journey__wrapper">
+          <div class="journey__description">
+            <h2>Путешествие                                                          на край Земли</h2>
+            <p>Это волшебное путешествие поможет вам познакомиться поближе                            с удивительным миром Антарктики. Наш круизный лайнер отвезет вас        на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+          </div>
+          <div class="journey__image">
+            <img src="./img/pinguins.jpg" alt="пингвины">
+          </div>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages" id="advantages">
         <h2>Преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--ship">
@@ -75,7 +77,7 @@
           </li>
         </ul>
       </section>
-      <section class="cruises">
+      <section class="cruises" id="cruises">
         <h2>Ближайшие круизы</h2>
         <ul class="cruises__list">
           <li class="cruises__item">
@@ -312,84 +314,90 @@
           </li>
         </ul>
       </section>
-      <section class="booking">
-        <div class="booking__info">
-          <h2>Раннее бронирование</h2>
-          <p>Забронируйте тур за&nbsp;3<span>&nbsp;</span>-<span>&nbsp;</span>6&nbsp;месяцев до&nbsp;даты&nbsp;выезда и сэкономьте до 50%</p>
+      <section class="booking" id="booking">
+        <div class="booking__wrapper">
+          <div class="booking__info">
+            <h2>Раннее бронирование</h2>
+            <p>Забронируйте тур за&nbsp;3<span>&nbsp;</span>-<span>&nbsp;</span>6&nbsp;месяцев до&nbsp;даты&nbsp;выезда и сэкономьте до 50%</p>
+          </div>
+          <form>
+            <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</p>
+            <ul>
+              <li>
+                <input type="text" id="name" name="name" placeholder="Имя">
+                <label for="name" class="visually-hidden">карта</label>
+              </li>
+              <li>
+                <input type="tel" id="tel" name="tel" pattern="(\+\d{5,12})|\d{5,12}" placeholder="Телефон">
+                <label for="tel" class="visually-hidden">Телефон</label>
+              </li>
+              <li>
+                <input type="email" id="email" name="mail" placeholder="E-mail">
+                <label for="email" class="visually-hidden">E-mail</label>
+              </li>
+            </ul>
+            <input type="checkbox" id="agree" name="agree" value="yes">
+            <label for="agree">Я согласен на обработку моих&nbsp;персональных данных</label>
+            <input type="submit" value="Оставить заявку">
+          </form>
         </div>
-        <form>
-          <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</p>
-          <ul>
-            <li>
-              <input type="text" id="name" name="name" placeholder="Имя">
-              <label for="name" class="visually-hidden">карта</label>
-            </li>
-            <li>
-              <input type="tel" id="tel" name="tel" pattern="(\+\d{5,12})|\d{5,12}" placeholder="Телефон">
-              <label for="tel" class="visually-hidden">Телефон</label>
-            </li>
-            <li>
-              <input type="email" id="email" name="mail" placeholder="E-mail">
-              <label for="email" class="visually-hidden">E-mail</label>
-            </li>
-          </ul>
-          <input type="checkbox" id="agree" name="agree" value="yes">
-          <label for="agree">Я согласен на обработку моих&nbsp;персональных данных</label>
-          <input type="submit" value="Оставить заявку">
-        </form>
       </section>
-      <section class="map">
-        <div class="map__image">
-          <iframe class="map__iframe" title="карта" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002867!2d30.320858715769422!3d59.93871916905457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1594148436085!5m2!1sru!2sru" width="560" height="306" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <section class="map" id="contacts">
+        <div class="map__wrapper">
+          <div class="map__image">
+            <iframe class="map__iframe" title="карта" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002867!2d30.320858715769422!3d59.93871916905457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1594148436085!5m2!1sru!2sru" width="560" height="306" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+          <div class="map__info">
+            <p class="map__questions">У вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.</p>
+            <ul class="map__list">
+              <li class="map__item map__item--adress">
+                г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8
+              </li>
+              <li class="map__item map__item--call">
+                8-800-200-00-00
+              </li>
+            </ul>
         </div>
-        <div class="map__info">
-          <p class="map__questions">У вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.</p>
-          <ul class="map__list">
-            <li class="map__item map__item--adress">
-              г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8
-            </li>
-            <li class="map__item map__item--call">
-              8-800-200-00-00
-            </li>
-          </ul>
       </div>
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo">
-        <img src="./img/logo.svg" width="70" height="38" alt="logo">
-      </a>
-      <ul class="page-footer__menu footer-menu">
-        <li class="footer-menu__item">
-          <a href="#">Преимущества</a>
-        </li>
-        <li class="footer-menu__item">
-          <a href="#">Направления</a>
-        </li>
-        <li class="footer-menu__item">
-          <a href="#">Ближайшие круизы</a>
-        </li>
-        <li class="footer-menu__item">
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
-      <ul class="page-footer__socials socials">
-        <li class="socials__item">
-          <a href="#" class="socials__link socials__link--facebook">
-            <img src="./img/icon-facebook.svg" width="11" height="20" alt="facebook">
-          </a>
-        </li>
-        <li class="socials__item">
-          <a href="#" class="socials__link socials__link--instagram">
-            <img src="./img/icon-instagram.svg" width="20" height="20" alt="instagram">
-          </a>
-        </li>
-        <li class="socials__item">
-          <a href="#" class="socials__link socials__link--twitter">
-            <img src="./img/icon-twitter.svg" width="20" height="16" alt="twitter">
-          </a>
-        </li>
-      </ul>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <img src="./img/logo.svg" width="70" height="38" alt="logo">
+        </a>
+        <ul class="page-footer__menu footer-menu">
+          <li class="footer-menu__item">
+            <a href="#advantages">Преимущества</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#booking">Направления</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#cruises">Ближайшие круизы</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#contacts">Контакты</a>
+          </li>
+        </ul>
+        <ul class="page-footer__socials socials">
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--facebook">
+              <img src="./img/icon-facebook.svg" width="11" height="20" alt="facebook">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--instagram">
+              <img src="./img/icon-instagram.svg" width="20" height="20" alt="instagram">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--twitter">
+              <img src="./img/icon-twitter.svg" width="20" height="16" alt="twitter">
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
     <script src="js/main.js"></script>
   </body>

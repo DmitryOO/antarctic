@@ -1,11 +1,17 @@
 .map {
-  min-height: 546px;
   font-family: "Montserrat", "Arial", sans-serif;
   color: $darkcol;
   background-color: $lightcol;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
+}
+
+.map__wrapper {
+  max-width: 1366px;
+  min-height: 546px;
+  margin-right: auto;
+  margin-left: auto;
   padding-left: 103px;
   padding-right: 103px;
   display: flex;
@@ -69,7 +75,7 @@
 }
 
 @media (max-width: $tablet-width) {
-  .map {
+  .map__wrapper {
     min-height: 535px;
     padding-right: 45px;
     padding-left: 45px;
@@ -89,7 +95,7 @@
 }
 
 @media (max-width: $mobile-width) {
-  .map {
+  .map__wrapper {
     min-height: 703px;
     padding-right: 15px;
     padding-left: 15px;
