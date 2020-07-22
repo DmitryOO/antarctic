@@ -93,8 +93,7 @@ html {
   list-style: none; }
 
 .page-header__top-block {
-  height: 38px;
-  padding-top: 55px;
+  padding-top: 30px;
   max-width: 1160px;
   margin-left: auto;
   margin-right: auto;
@@ -131,7 +130,7 @@ html {
   font-weight: bold;
   font-size: 54px;
   line-height: 66px;
-  margin-top: 215px;
+  margin-top: 188px;
   margin-bottom: 12px; }
 
 .page-header__tours p {
@@ -150,7 +149,7 @@ html {
   .page-header__top-block {
     margin-left: 45px;
     margin-right: 45px;
-    padding-top: 42px;
+    padding-top: 18px;
     font-size: 14px;
     line-height: 17px; }
   .page-header__logo img {
@@ -160,7 +159,7 @@ html {
     font-size: 50px;
     line-height: 61px;
     margin-left: 45px;
-    margin-top: 226px;
+    margin-top: 205px;
     margin-bottom: 12px; }
   .page-header__tours p {
     margin-left: 45px;
@@ -175,10 +174,12 @@ html {
     margin-top: 20px;
     margin-left: 15px;
     margin-bottom: 29px;
-    display: none; }
+    height: 39px; }
     .page-header__logo img {
       width: 42px;
       height: 22px; }
+  .page-header__logo--white {
+    display: none; }
   .page-header__logo--mobile-menu {
     display: block;
     margin-bottom: 41px; }
