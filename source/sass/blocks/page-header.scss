@@ -2,7 +2,7 @@
   min-height: 650px;
   font-family: "Montserrat", "Arial", sans-serif;
   color: $lightcol;
-  background-image: url("./../../img/background_desktop.jpg");
+  background-image: url("../img/background_desktop.jpg");
   background-color: $darkcol;
   background-repeat: no-repeat;
   background-size: cover;
@@ -133,6 +133,11 @@
 
 @media (max-width: $mobile-width) {
   .page-header {
+    min-height: 800px;
+    background-image: none;
+  }
+
+  .page-header--activeJS {
     min-height: 500px;
     background-image: url("./../../img/background_mobile.jpg");
   }
@@ -183,13 +188,20 @@
     margin-top: 0;
   }
 
+  .page-header__tours {
+    background-image: url("./../../img/background_mobile.jpg");
+    background-size: cover;
+    min-height: 500px;
+  }
+
   .page-header__tours h1 {
     font-weight: 700;
     font-size: 36px;
     white-space: pre-wrap;
     line-height: 125%;
     margin-left: 15px;
-    margin-top: -123px;
+    margin-top: 0;
+    padding-top: 174px;
     margin-bottom: 12px;
   }
 
@@ -199,5 +211,15 @@
     white-space: pre-wrap;
     line-height: 140%;
     margin-left: 15px;
+  }
+
+  .page-header__tours--activeJS {
+    min-height: 0;
+    background-image: none;
+
+    h1 {
+      margin-top: -123px;
+      padding-top: 0;
+    }
   }
 }
