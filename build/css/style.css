@@ -701,14 +701,12 @@ html {
   font-weight: 600;
   font-size: 28px; }
 
-.cruises ul {
+.cruises__list {
   margin-left: auto;
   margin-right: auto;
   max-width: 1366px;
   list-style: none;
-  padding-left: 0; }
-
-.cruises__list {
+  padding-left: 0;
   margin-bottom: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
