@@ -6,6 +6,7 @@
   background-color: $darkcol;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 20px;
 }
 
 .page-header__toggle--open {
@@ -15,7 +16,7 @@
   top: 24px;
   right: 14px;
   border: none;
-  background-image: url("./../../img/icon-menu.svg");
+  background-image: url("../img/icon-menu.svg");
   background-repeat: no-repeat;
   background-color: transparent;
 }
@@ -27,7 +28,7 @@
   top: 24px;
   right: 14px;
   border: none;
-  background-image: url("./../../img/icon-cross.svg");
+  background-image: url("../img/icon-cross.svg");
   background-repeat: no-repeat;
   background-color: transparent;
 }
@@ -48,7 +49,7 @@
 
 .page-header__top-block {
   padding-top: 30px;
-  max-width: 1160px;
+  max-width: 85%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -62,7 +63,7 @@
 }
 
 .page-header__tours {
-  max-width: 974px;
+  max-width: 71%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -100,10 +101,11 @@
 @media (max-width: $tablet-width) {
   .page-header {
     min-height: 638px;
-    background-image: url("./../../img/background_tablet.jpg");
+    background-image: url("../img/background_tablet.jpg");
   }
 
   .page-header__top-block {
+    max-width: 100%;
     margin-left: 45px;
     margin-right: 45px;
     padding-top: 18px;
@@ -116,16 +118,22 @@
     height: 20px;
   }
 
+  .page-header__tours {
+    max-width: 100%;
+  }
+
   .page-header__tours h1 {
     font-size: 50px;
     line-height: 61px;
     margin-left: 45px;
+    margin-right: 45px;
     margin-top: 205px;
     margin-bottom: 12px;
   }
 
   .page-header__tours p {
     margin-left: 45px;
+    margin-right: 45px;
     font-size: 18px;
     line-height: 22px;
   }
@@ -139,7 +147,7 @@
 
   .page-header--activeJS {
     min-height: 500px;
-    background-image: url("./../../img/background_mobile.jpg");
+    background-image: url("../img/background_mobile.jpg");
   }
 
   .page-header__logo {
@@ -189,7 +197,7 @@
   }
 
   .page-header__tours {
-    background-image: url("./../../img/background_mobile.jpg");
+    background-image: url("../img/background_mobile.jpg");
     background-size: cover;
     min-height: 500px;
   }
@@ -200,6 +208,7 @@
     white-space: pre-wrap;
     line-height: 125%;
     margin-left: 15px;
+    margin-right: 15px;
     margin-top: 0;
     padding-top: 174px;
     margin-bottom: 12px;

@@ -4,7 +4,7 @@
   font-size: 18px;
   line-height: 27px;
   color: $darkcol;
-  background-image: url("./../../img/form_background_desktop.jpg");
+  background-image: url("../img/form_background_desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -56,6 +56,7 @@ form ul {
 }
 
 form input {
+  border-radius: 0;
   width: 100%;
   height: 43px;
   font-size: 14px;
@@ -109,14 +110,14 @@ label::before {
 }
 
 input[type="checkbox"]:checked + label::before {
-  background-image: url("./../../img/icon-form-check.svg");
+  background-image: url("../img/icon-form-check.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 @media (max-width: $tablet-width) {
   .booking {
-    background-image: url("./../../img/form_background_tablet.jpg");
+    background-image: url("../img/form_background_tablet.jpg");
   }
 
   .booking__wrapper {
@@ -146,7 +147,7 @@ input[type="checkbox"]:checked + label::before {
 @media (max-width: $mobile-width) {
   .booking {
 
-    background-image: url("./../../img/form_background_mobile.jpg");
+    background-image: url("../img/form_background_mobile.jpg");
   }
 
   .booking__wrapper {
