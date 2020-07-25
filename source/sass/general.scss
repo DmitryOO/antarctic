@@ -21,3 +21,8 @@ html {
   overflow: hidden;
 }
 
+input,
+textarea,
+select {
+  -webkit-appearance: none;
+}

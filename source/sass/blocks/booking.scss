@@ -4,6 +4,7 @@
   font-size: 18px;
   line-height: 27px;
   color: $darkcol;
+  background-color: #e3ecf6;
   background-image: url("../img/form_background_desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -96,7 +97,10 @@ form > p {
 }
 
 input[type="checkbox"] {
-  display: none;
+  height: 0;
+  width: 0;
+  margin: 0;
+  padding: 0;
 }
 
 label::before {
@@ -107,6 +111,10 @@ label::before {
   top: -3px;
   left: 0;
   background-color: $lightcol;
+}
+
+input[type="checkbox"]:focus + label::before {
+  outline: -webkit-focus-ring-color auto 1px;
 }
 
 input[type="checkbox"]:checked + label::before {
