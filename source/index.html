@@ -301,34 +301,36 @@
               <a href="#" class="cruises__button">Забронировать</a>
             </div>
           </li>
-        </dl>
+        </ul>
       </section>
       <section class="booking" id="booking">
         <div class="booking__wrapper">
           <div class="booking__info">
             <h2>Раннее бронирование</h2>
-            <p>Забронируйте тур за&nbsp;3-6&nbsp;месяцев до&nbsp;даты&nbsp;выезда и сэкономьте до 50%</p>
+            <p>Забронируйте тур за&nbsp;3<span>&nbsp;</span>-<span>&nbsp;</span>6&nbsp;месяцев до&nbsp;даты&nbsp;выезда и сэкономьте до 50%</p>
           </div>
-          <form>
-            <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</p>
-            <ul>
-              <li>
-                <input type="text" id="name" name="name" placeholder="Имя">
-                <label for="name" class="visually-hidden">карта</label>
-              </li>
-              <li>
-                <input type="tel" id="tel" name="tel" pattern="(\+\d{5,12})|\d{5,12}" placeholder="Телефон">
-                <label for="tel" class="visually-hidden">Телефон</label>
-              </li>
-              <li>
-                <input type="email" id="email" name="mail" placeholder="E-mail">
-                <label for="email" class="visually-hidden">E-mail</label>
-              </li>
-            </ul>
-            <input type="checkbox" id="agree" name="agree" value="yes">
-            <label for="agree">Я согласен на обработку моих&nbsp;персональных данных</label>
-            <input type="submit" value="Оставить заявку">
-          </form>
+          <div class="booking__form">
+            <form>
+              <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</p>
+              <ul>
+                <li>
+                  <input type="text" id="name" name="name" placeholder="Валерия">
+                  <label for="name" class="visually-hidden">Имяlabel>
+                </li>
+                <li>
+                  <input type="tel" id="tel" name="tel" pattern="(\+\d{5,12})|\d{5,12}" placeholder="89236889975">
+                  <label for="tel" class="visually-hidden">Телефон</label>
+                </li>
+                <li>
+                  <input type="email" id="email" name="mail" placeholder="grishaewa.lera@gmail.com">
+                  <label for="email" class="visually-hidden">E-mail</label>
+                </li>
+              </ul>
+              <input type="checkbox" id="agree" name="agree" value="yes">
+              <label for="agree">Я согласен на обработку моих&nbsp;персональных данных</label>
+              <input type="submit" value="Оставить заявку">
+            </form>
+          </div>
         </div>
       </section>
       <section class="map" id="contacts">
@@ -343,7 +345,7 @@
                 г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8
               </li>
               <li class="map__item map__item--call">
-                8-800-200-00-00
+                <a href="tel:8800200000">8-800-200-00-00</a>
               </li>
             </ul>
         </div>
@@ -372,22 +374,31 @@
         <ul class="page-footer__socials socials">
           <li class="socials__item">
             <a href="#" class="socials__link socials__link--facebook">
-              <img src="./img/icon-facebook.svg" width="11" height="20" alt="facebook">
+              <span>фейсбук</span>
             </a>
           </li>
           <li class="socials__item">
             <a href="#" class="socials__link socials__link--instagram">
-              <img src="./img/icon-instagram.svg" width="20" height="20" alt="instagram">
+              <span>инстаграм</span>
             </a>
           </li>
           <li class="socials__item" >
             <a href="#" class="socials__link socials__link--twitter">
-              <img src="./img/icon-twitter.svg" width="20" height="16" alt="twitter">
+              <span>твиттер</span>
             </a>
           </li>
         </ul>
       </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script>
+      var elements = document.querySelectorAll('#tel');
+      for (var i = 0; i < elements.length; i++) {
+        new IMask(elements[i], {
+          mask: '00000000000',
+        });
+      }
+    </script>
   </body>
 </html>

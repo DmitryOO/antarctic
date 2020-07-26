@@ -26,7 +26,7 @@
 }
 
 .advantages__list {
-  max-width: 1160px;
+  max-width: 100%;
   list-style: none;
   padding-left: 0;
   display: flex;
@@ -34,10 +34,10 @@
 }
 
 .advantages__item {
+  width: 31%;
   padding: 30px;
   padding-top: 67px;
   padding-bottom: 6px;
-  flex-basis: 360px;
   background-color: $lightcol;
   position: relative;
 }
@@ -114,7 +114,7 @@
   }
 
   .advantages__item {
-    flex-basis: 30.4%;
+    width: 30.4%;
     padding-right: 0;
     padding-left: 22px;
     padding-top: 50px;
@@ -173,6 +173,7 @@
   }
 
   .advantages__item {
+    width: auto;
     margin-bottom: 28px;
     padding-top: 55px;
   }

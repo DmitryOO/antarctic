@@ -4,14 +4,15 @@
   font-size: 16px;
   line-height: 20px;
   background-color: $darkcol;
+  padding-top: 33px;
+  padding-bottom: 33px;
 }
 
 .page-footer__wrapper {
   max-width: 1366px;
   margin-left: auto;
   margin-right: auto;
-  min-height: 138px;
-  padding: 0 103px;
+  padding: 0 7.7%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,12 +30,13 @@
 
 @media (max-width: $tablet-width) {
   .page-footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-size: 12px;
     line-height: 15px;
   }
 
   .page-footer__wrapper {
-    min-height: 120px;
     padding: 0 45px;
   }
 
@@ -49,10 +51,16 @@
 }
 
 @media (max-width: $mobile-width) {
+
+  .page-footer {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
   .page-footer__wrapper {
     min-height: 283px;
     padding-top: 40px;
-    padding-bottom: 37px;
+    padding-bottom: 30px;
     padding-left: 15px;
     flex-direction: column;
     align-items: flex-start;
