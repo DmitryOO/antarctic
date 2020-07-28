@@ -7,6 +7,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 20px;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/background_desktop_2x.jpg");
+  }
 }
 
 .page-header__toggle--open {
@@ -102,6 +106,10 @@
   .page-header {
     min-height: 638px;
     background-image: url("../img/background_tablet.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/background_tablet_2x.jpg");
+    }
   }
 
   .page-header__top-block {
@@ -143,11 +151,16 @@
   .page-header {
     min-height: 800px;
     background-image: none;
+    padding-bottom: 0;
   }
 
   .page-header--activeJS {
     min-height: 500px;
     background-image: url("../img/background_mobile.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/background_mobile_2x.jpg");
+    }
   }
 
   .page-header__logo {
@@ -200,6 +213,10 @@
     background-image: url("../img/background_mobile.jpg");
     background-size: cover;
     min-height: 500px;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/background_mobile_2x.jpg");
+    }
   }
 
   .page-header__tours h1 {

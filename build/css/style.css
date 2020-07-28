@@ -59,6 +59,9 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 20px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+    .page-header {
+      background-image: url("../img/background_desktop_2x.jpg"); } }
 
 .page-header__toggle--open {
   width: 25px;
@@ -146,7 +149,12 @@ html {
 @media (max-width: 1023px) {
   .page-header {
     min-height: 638px;
-    background-image: url("../img/background_tablet.jpg"); }
+    background-image: url("../img/background_tablet.jpg"); } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    .page-header {
+      background-image: url("../img/background_tablet_2x.jpg"); } }
+
+@media (max-width: 1023px) {
   .page-header__top-block {
     max-width: 100%;
     margin-left: 45px;
@@ -175,10 +183,16 @@ html {
 @media (max-width: 767px) {
   .page-header {
     min-height: 800px;
-    background-image: none; }
+    background-image: none;
+    padding-bottom: 0; }
   .page-header--activeJS {
     min-height: 500px;
-    background-image: url("../img/background_mobile.jpg"); }
+    background-image: url("../img/background_mobile.jpg"); } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .page-header--activeJS {
+      background-image: url("../img/background_mobile_2x.jpg"); } }
+
+@media (max-width: 767px) {
   .page-header__logo {
     margin-top: 20px;
     margin-left: 15px;
@@ -220,7 +234,12 @@ html {
   .page-header__tours {
     background-image: url("../img/background_mobile.jpg");
     background-size: cover;
-    min-height: 500px; }
+    min-height: 500px; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .page-header__tours {
+      background-image: url("../img/background_mobile_2x.jpg"); } }
+
+@media (max-width: 767px) {
   .page-header__tours h1 {
     font-weight: 700;
     font-size: 36px;
@@ -481,7 +500,7 @@ html {
   margin-right: auto;
   margin-left: auto;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 113px;
   padding-left: 103px;
   padding-right: 103px;
   display: -webkit-box;
@@ -489,15 +508,7 @@ html {
   display: flex; }
 
 .journey__image {
-  margin-left: 88px;
-  width: 560px;
-  height: 300px;
-  overflow: hidden; }
-
-.journey__image img {
-  position: relative;
-  left: -100px;
-  bottom: 36px; }
+  margin-left: 88px; }
 
 .journey__description {
   -ms-flex-preferred-size: 512px;
@@ -518,15 +529,10 @@ html {
     padding-left: 45px;
     padding-right: 45px; }
   .journey__image {
-    margin-left: 30px;
+    margin-left: 30px; }
+  .journey__image img {
     width: 324px;
     height: 264px; }
-  .journey__image img {
-    width: 468px;
-    height: 100%;
-    position: relative;
-    left: -71px;
-    bottom: 0; }
   .journey__description {
     -ms-flex-preferred-size: 324px;
         flex-basis: 324px;
@@ -544,21 +550,17 @@ html {
     padding-top: 67px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 65px;
+    padding-bottom: 60px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
   .journey__image {
-    width: 290px;
-    height: 186px;
     margin-left: auto;
     margin-right: auto; }
   .journey__image img {
-    width: 333px;
-    left: -22px;
-    top: 0;
-    position: relative; }
+    width: 290px;
+    height: 186px; }
   .journey__description {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
@@ -591,9 +593,12 @@ html {
   padding-left: 103px;
   padding-right: 103px;
   background-color: #e3ecf6;
-  background-image: url("../img/advantages_desktop.png");
+  background-image: url("../img/advantages_desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+    .advantages {
+      background-image: url("../img/advantages_desktop_2x.jpg"); } }
 
 .advantages h2 {
   margin-top: 0;
@@ -667,7 +672,12 @@ html {
     padding-left: 45px;
     padding-right: 45px;
     padding-top: 91px;
-    background-image: url("../img/advantages_tablet.png"); }
+    background-image: url("../img/advantages_tablet.jpg"); } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    .advantages {
+      background-image: url("../img/advantages_tablet_2x.jpg"); } }
+
+@media (max-width: 1023px) {
   .advantages__item:nth-child(2n) {
     margin-right: auto;
     margin-left: auto; }
@@ -714,8 +724,13 @@ html {
     padding-right: 15px;
     padding-left: 15px;
     padding-top: 56px;
-    padding-bottom: 25px;
-    background-image: url("../img/advantages_mobile.png"); }
+    padding-bottom: 23px;
+    background-image: url("../img/advantages_mobile.jpg"); } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .advantages {
+      background-image: url("../img/advantages_mobile_2x.jpg"); } }
+
+@media (max-width: 767px) {
   .advantages__item {
     width: auto;
     margin-bottom: 28px;
@@ -807,32 +822,6 @@ html {
   height: 386px;
   overflow: hidden; }
 
-.cruises__image img {
-  position: relative;
-  left: 0;
-  bottom: 0; }
-
-.cruises__image--astoria img {
-  left: -165px; }
-
-.cruises__image--atlantis img {
-  left: -123px; }
-
-.cruises__image--odyssey img {
-  left: -120px; }
-
-.cruises__image--olympia img {
-  left: -120px; }
-
-.cruises__image--aurora img {
-  left: -106px; }
-
-.cruises__image--leonor img {
-  left: -145px; }
-
-.cruises__image--minion img {
-  left: -176px; }
-
 .cruises__info {
   visibility: hidden;
   width: 100%;
@@ -914,6 +903,9 @@ html {
   .cruises__image {
     width: 309px;
     height: 386px; }
+  .cruises__image img {
+    width: 309px;
+    height: 386px; }
   .cruises__item:nth-child(3n) {
     margin-right: 30px; }
   .cruises__item:nth-last-child(1) {
@@ -929,31 +921,6 @@ html {
   .cruises__item > p {
     top: 320px;
     left: 35px; }
-  .cruises__image--astoria img {
-    left: -142px; }
-  .cruises__image--atlantis img {
-    left: -100px; }
-  .cruises__image--odyssey img {
-    width: 600px;
-    height: 460px;
-    top: -3px;
-    left: -106px; }
-  .cruises__image--olympia img {
-    width: 600px;
-    height: 447px;
-    left: -145px; }
-  .cruises__image--aurora img {
-    width: 515px;
-    left: -103px; }
-  .cruises__image--leonor img {
-    height: 386px;
-    width: 597px;
-    left: -168px;
-    top: 0; }
-  .cruises__image--minion img {
-    width: 823px;
-    height: 524px;
-    left: -209px; }
   .cruises__info {
     padding-left: 35px;
     padding-right: 35px; }
@@ -979,6 +946,8 @@ html {
     margin-bottom: 40px; }
   .cruises__image {
     width: 270px; }
+  .cruises__image img {
+    width: 270px; }
   .cruises__item:nth-child(3n) {
     margin-right: 0; }
   .cruises__item {
@@ -991,37 +960,7 @@ html {
     top: 327px;
     left: 25px; }
   .cruises__button {
-    width: 220px; }
-  .cruises__image--astoria img {
-    height: 383px;
-    left: -164px; }
-  .cruises__image--atlantis img {
-    left: -123px; }
-  .cruises__image--odyssey img {
-    width: 540px;
-    height: 450px;
-    top: 0;
-    left: -100px; }
-  .cruises__image--olympia img {
-    width: 531px;
-    height: 459px;
-    left: -131px;
-    top: -7px; }
-  .cruises__image--aurora img {
-    height: 386px;
-    width: 518px;
-    left: -124px;
-    top: 0; }
-  .cruises__image--leonor img {
-    height: 386px;
-    width: 540px;
-    left: -154px;
-    top: 0; }
-  .cruises__image--minion img {
-    width: 735px;
-    height: 524px;
-    top: -1px;
-    left: -189px; } }
+    width: 220px; } }
 
 .map {
   font-family: "Montserrat", "Arial", sans-serif;
@@ -1155,6 +1094,9 @@ html {
   background-image: url("../img/form_background_desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+    .booking {
+      background-image: url("../img/form_background_desktop_2x.jpg"); } }
 
 .booking__wrapper {
   margin-left: auto;
@@ -1319,7 +1261,12 @@ html {
 
 @media (max-width: 1023px) {
   .booking {
-    background-image: url("../img/form_background_tablet.jpg"); }
+    background-image: url("../img/form_background_tablet.jpg"); } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    .booking {
+      background-image: url("../img/form_background_tablet_2x.jpg"); } }
+
+@media (max-width: 1023px) {
   .booking__info {
     margin-right: 0; }
   .booking__wrapper {
@@ -1350,7 +1297,12 @@ html {
 
 @media (max-width: 767px) {
   .booking {
-    background-image: url("../img/form_background_mobile.jpg"); }
+    background-image: url("../img/form_background_mobile.jpg"); } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .booking {
+      background-image: url("../img/form_background_mobile_2x.jpg"); } }
+
+@media (max-width: 767px) {
   .booking__wrapper {
     min-height: 760px;
     padding-left: 15px;

@@ -8,6 +8,10 @@
   background-image: url("../img/form_background_desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/form_background_desktop_2x.jpg");
+  }
 }
 
 .booking__wrapper {
@@ -149,6 +153,10 @@
 @media (max-width: $tablet-width) {
   .booking {
     background-image: url("../img/form_background_tablet.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/form_background_tablet_2x.jpg");
+    }
   }
 
   .booking__info {
@@ -182,8 +190,11 @@
 
 @media (max-width: $mobile-width) {
   .booking {
-
     background-image: url("../img/form_background_mobile.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/form_background_mobile_2x.jpg");
+    }
   }
 
   .booking__wrapper {

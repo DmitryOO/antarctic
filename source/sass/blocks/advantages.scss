@@ -12,9 +12,13 @@
   padding-left: 103px;
   padding-right: 103px;
   background-color: #e3ecf6;
-  background-image: url("../img/advantages_desktop.png");
+  background-image: url("../img/advantages_desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantages_desktop_2x.jpg");
+  }
 }
 
 .advantages h2 {
@@ -97,7 +101,11 @@
     padding-left: 45px;
     padding-right: 45px;
     padding-top: 91px;
-    background-image: url("../img/advantages_tablet.png");
+    background-image: url("../img/advantages_tablet.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantages_tablet_2x.jpg");
+    }
   }
 
   .advantages__item:nth-child(2n) {
@@ -168,8 +176,12 @@
     padding-right: 15px;
     padding-left: 15px;
     padding-top: 56px;
-    padding-bottom: 25px;
-    background-image: url("../img/advantages_mobile.png");
+    padding-bottom: 23px;
+    background-image: url("../img/advantages_mobile.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantages_mobile_2x.jpg");
+    }
   }
 
   .advantages__item {

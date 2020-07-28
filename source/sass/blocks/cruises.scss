@@ -66,40 +66,6 @@
   overflow: hidden;
 }
 
-.cruises__image img {
-  position: relative;
-  left: 0;
-  bottom: 0;
-}
-
-.cruises__image--astoria img {
-  left: -165px;
-}
-
-.cruises__image--atlantis img {
-  left: -123px;
-}
-
-.cruises__image--odyssey img {
-  left: -120px;
-}
-
-.cruises__image--olympia img {
-  left: -120px;
-}
-
-.cruises__image--aurora img {
-  left: -106px;
-}
-
-.cruises__image--leonor img {
-  left: -145px;
-}
-
-.cruises__image--minion img {
-  left: -176px;
-}
-
 
 .cruises__info {
   visibility: hidden;
@@ -194,6 +160,11 @@
     height: 386px;
   }
 
+  .cruises__image img {
+    width: 309px;
+    height: 386px;
+  }
+
   .cruises__item:nth-child(3n) {
     margin-right: 30px;
   }
@@ -217,45 +188,6 @@
   .cruises__item > p {
     top: 320px;
     left: 35px;
-  }
-
-  .cruises__image--astoria img {
-    left: -142px;
-  }
-
-  .cruises__image--atlantis img {
-    left: -100px;
-  }
-
-  .cruises__image--odyssey img {
-    width: 600px;
-    height: 460px;
-    top: -3px;
-    left: -106px;
-  }
-
-  .cruises__image--olympia img {
-    width: 600px;
-    height: 447px;
-    left: -145px;
-  }
-
-  .cruises__image--aurora img {
-    width: 515px;
-    left: -103px;
-  }
-
-  .cruises__image--leonor img {
-    height: 386px;
-    width: 597px;
-    left: -168px;
-    top: 0;
-  }
-
-  .cruises__image--minion img {
-    width: 823px;
-    height: 524px;
-    left: -209px;
   }
 
   .cruises__info {
@@ -289,6 +221,10 @@
     width: 270px;
   }
 
+  .cruises__image img {
+    width: 270px;
+  }
+
   .cruises__item:nth-child(3n) {
     margin-right: 0;
   }
@@ -310,49 +246,5 @@
 
   .cruises__button {
     width: 220px;
-  }
-
-  .cruises__image--astoria img {
-    height: 383px;
-    left: -164px;
-  }
-
-  .cruises__image--atlantis img {
-    left: -123px;
-  }
-
-  .cruises__image--odyssey img {
-    width: 540px;
-    height: 450px;
-    top: 0;
-    left: -100px;
-  }
-
-  .cruises__image--olympia img {
-    width: 531px;
-    height: 459px;
-    left: -131px;
-    top: -7px;
-  }
-
-  .cruises__image--aurora img {
-    height: 386px;
-    width: 518px;
-    left: -124px;
-    top: 0;
-  }
-
-  .cruises__image--leonor img {
-    height: 386px;
-    width: 540px;
-    left: -154px;
-    top: 0;
-  }
-
-  .cruises__image--minion img {
-    width: 735px;
-    height: 524px;
-    top: -1px;
-    left: -189px;
   }
 }

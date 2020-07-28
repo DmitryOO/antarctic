@@ -15,7 +15,7 @@
   margin-right: auto;
   margin-left: auto;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 113px;
   padding-left: 103px;
   padding-right: 103px;
   display: flex;
@@ -23,15 +23,6 @@
 
 .journey__image {
   margin-left: 88px;
-  width: 560px;
-  height: 300px;
-  overflow: hidden;
-}
-
-.journey__image img {
-  position: relative;
-  left: -100px;
-  bottom: 36px;
 }
 
 
@@ -58,16 +49,11 @@
 
   .journey__image {
     margin-left: 30px;
-    width: 324px;
-    height: 264px;
   }
 
   .journey__image img {
-    width: 468px;
-    height: 100%;
-    position: relative;
-    left: -71px;
-    bottom: 0;
+    width: 324px;
+    height: 264px;
   }
 
   .journey__description {
@@ -82,7 +68,6 @@
     margin-top: -10px;
     margin-bottom: 0;
   }
-
 }
 
 @media (max-width: $mobile-width) {
@@ -91,22 +76,18 @@
     padding-top: 67px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 65px;
+    padding-bottom: 60px;
     flex-direction: column;
   }
 
   .journey__image {
-    width: 290px;
-    height: 186px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .journey__image img {
-    width: 333px;
-    left: -22px;
-    top: 0;
-    position: relative;
+    width: 290px;
+    height: 186px;
   }
 
   .journey__description {
@@ -121,6 +102,4 @@
     margin-top: -10px;
     margin-bottom: 0;
   }
-
-
 }
