@@ -7,9 +7,9 @@
   var headerTop = document.querySelector('.page-header__top-block');
   var openButton = document.querySelector('.page-header__toggle--open');
   var closeButton = document.querySelector('.page-header__toggle--close');
-  var mobileLogo = document.querySelector('.page-header__logo--mobile-menu');
+  var mobileLogo = document.querySelector('.page-header__logo-mobile-menu');
   var logo = document.querySelector('.page-header__logo');
-  var logoWhite = document.querySelector('.page-header__logo--white');
+  var logoWhite = document.querySelector('.page-header__logo-white');
   var closeMenu = function () {
     logo.style.display = 'block';
     mobileLogo.style.display = 'none';
