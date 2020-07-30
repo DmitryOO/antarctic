@@ -224,3 +224,9 @@
     line-height: 149%;
   }
 }
+
+@media (min-width: 1367px) {
+  .advantages__list {
+    max-width: 1160px;
+  }
+}

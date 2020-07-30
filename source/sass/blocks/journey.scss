@@ -23,8 +23,17 @@
 
 .journey__image {
   margin-left: 88px;
+  width: 560px;
+  height: 301px;
+  overflow: hidden;
+  position: relative;
 }
 
+.journey__image img {
+  position: absolute;
+  top: -35px;
+  left: -100px;
+}
 
 .journey__description {
   flex-basis: 512px;
@@ -48,12 +57,16 @@
   }
 
   .journey__image {
+    width: 324px;
+    height: 264px;
     margin-left: 30px;
   }
 
   .journey__image img {
-    width: 324px;
-    height: 264px;
+    left: -72px;
+    top: 0;
+    width: 470px;
+    height: 265px;
   }
 
   .journey__description {
@@ -76,17 +89,20 @@
     padding-top: 67px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 60px;
+    padding-bottom: 67px;
     flex-direction: column;
   }
 
   .journey__image {
+    width: 290px;
+    height: 186px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .journey__image img {
-    width: 290px;
+    left: -19px;
+    width: 328px;
     height: 186px;
   }
 

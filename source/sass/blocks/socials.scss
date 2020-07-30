@@ -1,5 +1,5 @@
 .socials {
-  min-width: 150px;
+  width: 150px;
   padding-left: 0;
   display: flex;
   flex-wrap: wrap;
@@ -44,7 +44,7 @@
 
 @media (max-width: $tablet-width) {
   .socials {
-    min-width: 0;
+    width: 110px;
   }
 
   .socials__item {

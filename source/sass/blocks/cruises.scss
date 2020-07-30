@@ -63,9 +63,51 @@
 .cruises__image {
   width: 260px;
   height: 386px;
+  position: relative;
   overflow: hidden;
 }
 
+.cruises__image img {
+  position: absolute;
+}
+
+.cruises__image--astoria img {
+  left: -125px;
+  width: 520px;
+}
+
+.cruises__image--aline img {
+  left: -146px;
+}
+
+.cruises__image--atlantis img {
+  left: -22px;
+  width: 304px;
+}
+
+.cruises__image--odyssey img {
+  left: -125px;
+  width: 455px;
+  height: 418px;
+}
+
+.cruises__image--olympia img {
+  left: -118px;
+}
+
+.cruises__image--aurora img {
+  left: -104px;
+}
+
+.cruises__image--leonor img {
+  left: -145px;
+}
+
+.cruises__image--minion img {
+  left: -177px;
+  width: 555px;
+  height: 520px;
+}
 
 .cruises__info {
   visibility: hidden;
@@ -160,9 +202,43 @@
     height: 386px;
   }
 
-  .cruises__image img {
+  .cruises__image--astoria img {
+    left: -112px;
+    width: 540px;
+  }
+
+  .cruises__image--atlantis img {
+    left: 0;
     width: 309px;
-    height: 386px;
+  }
+
+  .cruises__image--odyssey img {
+    left: -96px;
+    width: 460px;
+    height: 452px;
+    top: 0;
+  }
+
+  .cruises__image--olympia img {
+    left: -144px;
+    height: 455px;
+    width: 599px;
+    top: -4px;
+  }
+
+  .cruises__image--aurora img {
+    left: -100px;
+  }
+
+  .cruises__image--leonor img {
+    left: -171px;
+    width: 605px;
+  }
+
+  .cruises__image--minion img {
+    left: -201px;
+    width: 639px;
+    height: 522px;
   }
 
   .cruises__item:nth-child(3n) {
@@ -221,8 +297,38 @@
     width: 270px;
   }
 
-  .cruises__image img {
-    width: 270px;
+  .cruises__image--astoria img {
+    left: -133px;
+  }
+
+  .cruises__image--atlantis img {
+    left: -19px;
+  }
+
+  .cruises__image--odyssey img {
+    left: -99px;
+    width: 427px;
+  }
+
+  .cruises__image--olympia img {
+    left: -129px;
+    width: 528px;
+    top: -4px;
+  }
+
+  .cruises__image--aurora img {
+    left: -119px;
+  }
+
+  .cruises__image--leonor img {
+    left: -150px;
+    width: 530px;
+  }
+
+  .cruises__image--minion img {
+    left: -193px;
+    width: 596px;
+    height: 520px;
   }
 
   .cruises__item:nth-child(3n) {

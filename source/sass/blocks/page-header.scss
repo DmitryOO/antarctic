@@ -249,3 +249,13 @@
     }
   }
 }
+
+@media (min-width: 1367px) {
+  .page-header__top-block {
+    max-width: 1160px;
+  }
+
+  .page-header__tours {
+    max-width: 970px;
+  }
+}

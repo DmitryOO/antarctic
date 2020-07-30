@@ -12,14 +12,11 @@
     <link rel="preload" href="fonts/montserrat-v14-cyrillic_latin-regular.woff2" as="font">
     <link rel="preload" href="fonts/montserrat-v14-latin_cyrillic-500.woff2" as="font">
     <link rel="preload" href="fonts/montserrat-v14-latin_cyrillic-700.woff2" as="font">
-    <link rel="preload" href="fonts/montserrat-v14-cyrillic_latin-600.woff" as="font">
-    <link rel="preload" href="fonts/montserrat-v14-cyrillic_latin-regular.woff" as="font">
-    <link rel="preload" href="fonts/montserrat-v14-latin_cyrillic-500.woff" as="font">
-    <link rel="preload" href="fonts/montserrat-v14-latin_cyrillic-700.woff" as="font">
   </head>
   <body>
     <header class="page-header">
       <section class="page-header__top-block">
+        <h2 class="visually-hidden">Меню</h2>
         <a class="page-header__logo ">
           <img class="page-header__logo-white" src="./img/logo.svg" width="70" height="38" alt="logo">
           <img class="page-header__logo-mobile-menu" src="./img/logo-mobile-blue.svg" width="70" height="38" alt="logo">
@@ -54,13 +51,9 @@
           </div>
           <div class="journey__image">
             <picture>
-              <source type="image/webp" media="(max-width: 767px)" srcset="./img/pinguins_mobile.webp 1x, ./img/pinguins_mobile_2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)" srcset="./img/pinguins_tablet.webp 1x, ./img/pinguins_tablet_2x.webp 2x">
-              <source type="image/webp" srcset="./img/pinguins_desktop.webp 1x, ./img/pinguins_desktop_2x.webp 2x">
-              <source media="(max-width: 767px)" srcset="./img/pinguins_mobile.jpg 1x, ./img/pinguins_mobile_2x.jpg 2x">
-              <source media="(max-width: 768px)" srcset="./img/pinguins_tablet.jpg 1x, ./img/pinguins_tablet_2x.jpg 2x">
-              <!-- 1x:560; 2x:1120-->
-              <img src="./img/pinguins_desktop.jpg" srcset="./img/pinguins_desktop_2x.jpg 2x" width="560" height="301" alt="пингвины">
+              <source type="image/webp" srcset="./img/pinguins.webp 1x, ./img/pinguins_2x.webp 2x">
+              <!-- 1x:682; 2x:1364-->
+              <img src="./img/pinguins.jpg" srcset="./img/pinguins_2x.jpg 2x" width="682" height="383" alt="пингвины">
             </picture>
           </div>
         </div>
@@ -88,13 +81,9 @@
           <li class="cruises__item" tabindex="0">
             <div class="cruises__image cruises__image--astoria">
               <picture>
-                <source type="image/webp" media="(max-width: 767px)" srcset="./img/astoria_mobile.webp 1x, ./img/astoria_mobile_2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="./img/astoria_tablet.webp 1x, ./img/astoria_tablet_2x.webp 2x">
-                <source type="image/webp" srcset="./img/astoria_desktop.webp 1x, ./img/astoria_desktop_2x.webp 2x">
-                <source media="(max-width: 767px)" srcset="./img/astoria_mobile.jpg 1x, ./img/astoria_mobile_2x.jpg 2x">
-                <source media="(max-width: 1023px)" srcset="./img/astoria_tablet.jpg 1x, ./img/astoria_tablet_2x.jpg 2x">
-                <!-- 1x:260; 2x:520-->
-                <img src="./img/astoria_desktop.jpg" srcset="./img/astoria_desktop_2x.jpg 2x" width="260" height="386" alt="астория">
+                <source type="image/webp" srcset="./img/astoria.webp, ./img/astoria_2x.webp 2x">
+                <!-- 1x:502; 2x:1004-->
+                <img src="./img/aurora_desktop.jpg" srcset="./img/astoria_2x.jpg 2x" width="502" height="386" alt="астория">
               </picture>
             </div>
 
@@ -116,15 +105,11 @@
           </li>
           <li class="cruises__item" tabindex="0">
             <div class="cruises__image cruises__image--aline">
-              <picture>
-                <source type="image/webp" media="(max-width: 767px)" srcset="./img/astoria_mobile.webp 1x, ./img/astoria_mobile_2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="./img/astoria_tablet.webp 1x, ./img/astoria_tablet_2x.webp 2x">
-                <source type="image/webp" srcset="./img/astoria_desktop.webp 1x, ./img/astoria_desktop_2x.webp 2x">
-                <source media="(max-width: 767px)" srcset="./img/astoria_mobile.jpg 1x, ./img/astoria_mobile_2x.jpg 2x">
-                <source media="(max-width: 1023px)" srcset="./img/astoria_tablet.jpg 1x, ./img/astoria_tablet_2x.jpg 2x">
-                <!-- 1x:260; 2x:520-->
-                <img src="./img/astoria_desktop.jpg" srcset="./img/astoria_desktop_2x.jpg 2x" width="260" height="386" alt="элайн">
-              </picture>
+                <picture>
+                  <source type="image/webp" srcset="./img/astoria.webp 1x, ./img/astoria_2x.webp 2x">
+                  <!-- 1x:502; 2x:1004-->
+                  <img src="./img/astoria.jpg" srcset="./img/astoria_2x.jpg 2x" width="502" height="386" alt="элайн">
+                </picture>
             </div>
 
             <p>Круиз “Элайн”</p>
@@ -154,13 +139,9 @@
           <li class="cruises__item" tabindex="0">
             <div class="cruises__image cruises__image--atlantis">
               <picture>
-                <source type="image/webp" media="(max-width: 767px)" srcset="./img/atlantis_mobile.webp 1x, ./img/atlantis_mobile_2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="./img/atlantis_tablet.webp 1x, ./img/atlantis_tablet_2x.webp 2x">
-                <source type="image/webp" srcset="./img/atlantis_desktop.webp 1x, ./img/atlantis_desktop_2x.webp 2x">
-                <source media="(max-width: 767px)" srcset="./img/atlantis_mobile.jpg 1x, ./img/atlantis_mobile_2x.jpg 2x">
-                <source media="(max-width: 1023px)" srcset="./img/atlantis_tablet.jpg 1x, ./img/atlantis_tablet_2x.jpg 2x">
-                <!-- 1x:260; 2x:520-->
-                <img src="./img/atlantis_desktop.jpg" srcset="./img/atlantis_desktop_2x.jpg 2x" width="260" height="386" alt="атлантис">
+                <source type="image/webp" srcset="./img/atlantis.webp 1x, ./img/atlantis_2x.webp 2x">
+                <!-- 1x:309; 2x:618-->
+                <img src="./img/atlantis.jpg" srcset="./img/atlantis_2x.jpg 2x" width="309" height="386" alt="атлантис">
               </picture>
             </div>
 
@@ -191,13 +172,9 @@
           <li class="cruises__item" tabindex="0">
             <div class="cruises__image cruises__image--odyssey">
               <picture>
-                <source type="image/webp" media="(max-width: 767px)" srcset="./img/odyssey_mobile.webp 1x, ./img/odyssey_mobile_2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="./img/odyssey_tablet.webp 1x, ./img/odyssey_tablet_2x.webp 2x">
-                <source type="image/webp" srcset="./img/odyssey_desktop.webp 1x, ./img/odyssey_desktop_2x.webp 2x">
-                <source media="(max-width: 767px)" srcset="./img/odyssey_mobile.jpg 1x, ./img/odyssey_mobile_2x.jpg 2x">
-                <source media="(max-width: 1023px)" srcset="./img/odyssey_tablet.jpg 1x, ./img/odyssey_tablet_2x.jpg 2x">
-                <!-- 1x:260; 2x:520-->
-                <img src="./img/odyssey_desktop.jpg" srcset="./img/odyssey_desktop_2x.jpg 2x" width="260" height="386" alt="одиссей">
+                <source type="image/webp" srcset="./img/odyssey.webp 1x, ./img/odyssey_2x.webp 2x">
+                <!-- 1x:475; 2x:950-->
+                <img src="./img/odyssey.jpg" srcset="./img/odyssey_2x.jpg 2x" width="475" height="453" alt="одиссей">
               </picture>
             </div>
 
@@ -228,13 +205,9 @@
           <li class="cruises__item" tabindex="0">
             <div class="cruises__image cruises__image--olympia">
               <picture>
-                <source type="image/webp" media="(max-width: 767px)" srcset="./img/olympia_mobile.webp 1x, ./img/olympia_mobile_2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="./img/olympia_tablet.webp 1x, ./img/olympia_tablet_2x.webp 2x">
-                <source type="image/webp" srcset="./img/olympia_desktop.webp 1x, ./img/olympia_desktop_2x.webp 2x">
-                <source media="(max-width: 767px)" srcset="./img/olympia_mobile.jpg 1x, ./img/olympia_mobile_2x.jpg 2x">
-                <source media="(max-width: 1023px)" srcset="./img/olympia_tablet.jpg 1x, ./img/olympia_tablet_2x.jpg 2x">
-                <!-- 1x:260; 2x:520-->
-                <img src="./img/olympia_desktop.jpg" srcset="./img/olympia_desktop_2x.jpg 2x" width="260" height="386" alt="олимпия">
+                <source type="image/webp" srcset="./img/olympia.webp 1x, ./img/olympia_2x.webp 2x">
+                <!-- 1x:556; 2x:1112-->
+                <img src="./img/olympia.jpg" srcset="./img/olympia_2x.jpg 2x" width="556" height="415" alt="олимпия">
               </picture>
             </div>
 
@@ -265,13 +238,9 @@
           <li class="cruises__item" tabindex="0">
             <div class="cruises__image cruises__image--aurora">
               <picture>
-                <source type="image/webp" media="(max-width: 767px)" srcset="./img/aurora_mobile.webp 1x, ./img/aurora_mobile_2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="./img/aurora_tablet.webp 1x, ./img/aurora_tablet_2x.webp 2x">
-                <source type="image/webp" srcset="./img/aurora_desktop.webp 1x, ./img/aurora_desktop_2x.webp 2x">
-                <source media="(max-width: 767px)" srcset="./img/aurora_mobile.jpg 1x, ./img/aurora_mobile_2x.jpg 2x">
-                <source media="(max-width: 1023px)" srcset="./img/aurora_tablet.jpg 1x, ./img/aurora_tablet_2x.jpg 2x">
-                <!-- 1x:260; 2x:520-->
-                <img src="./img/aurora_desktop.jpg" srcset="./img/aurora_desktop_2x.jpg 2x" width="260" height="386" alt="аврора">
+                <source type="image/webp" srcset="./img/aurora.webp 1x, ./img/aurora_2x.webp 2x">
+                <!-- 1x:508; 2x:1016-->
+                <img src="./img/aurora.jpg" srcset="./img/aurora_2x.jpg 2x" width="508" height="386" alt="аврора">
               </picture>
             </div>
 
@@ -302,13 +271,9 @@
           <li class="cruises__item" tabindex="0">
             <div class="cruises__image cruises__image--leonor">
               <picture>
-                <source type="image/webp" media="(max-width: 767px)" srcset="./img/leonor_mobile.webp 1x, ./img/leonor_mobile_2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="./img/leonor_tablet.webp 1x, ./img/leonor_tablet_2x.webp 2x">
-                <source type="image/webp" srcset="./img/leonor_desktop.webp 1x, ./img/leonor_desktop_2x.webp 2x">
-                <source media="(max-width: 767px)" srcset="./img/leonor_mobile.jpg 1x, ./img/leonor_mobile_2x.jpg 2x">
-                <source media="(max-width: 1023px)" srcset="./img/leonor_tablet.jpg 1x, ./img/leonor_tablet_2x.jpg 2x">
-                <!-- 1x:260; 2x:520-->
-                <img src="./img/leonor_desktop.jpg" srcset="./img/leonor_desktop_2x.jpg 2x" width="260" height="386" alt="леонор">
+                <source type="image/webp" srcset="./img/leonor.webp 1x, ./img/leonor_2x.webp 2x">
+                <!-- 1x:510; 2x:1020-->
+                <img src="./img/leonor.jpg" srcset="./img/leonor_2x.jpg 2x" width="510" height="386" alt="леонор">
               </picture>
             </div>
 
@@ -339,13 +304,9 @@
           <li class="cruises__item" tabindex="0">
             <div class="cruises__image cruises__image--minion">
               <picture>
-                <source type="image/webp" media="(max-width: 767px)" srcset="./img/minion_mobile.webp 1x, ./img/minion_mobile_2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="./img/minion_tablet.webp 1x, ./img/minion_tablet_2x.webp 2x">
-                <source type="image/webp" srcset="./img/minion_desktop.webp 1x, ./img/minion_desktop_2x.webp 2x">
-                <source media="(max-width: 767px)" srcset="./img/minion_mobile.jpg 1x, ./img/minion_mobile_2x.jpg 2x">
-                <source media="(max-width: 1023px)" srcset="./img/minion_tablet.jpg 1x, ./img/minion_tablet_2x.jpg 2x">
-                <!-- 1x:260; 2x:520-->
-                <img src="./img/minion_desktop.jpg" srcset="./img/minion_desktop_2x.jpg 2x" width="260" height="386" alt="минион">
+                <source type="image/webp" srcset="./img/minion.webp 1x, ./img/minion_2x.webp 2x">
+                <!-- 1x:693; 2x:1386-->
+                <img src="./img/minion.jpg" srcset="./img/minion_2x.jpg 2x" width="510" height="386" alt="минион-1">
               </picture>
             </div>
 
@@ -406,6 +367,7 @@
         </div>
       </section>
       <section class="map" id="contacts">
+        <h2 class="visually-hidden">карта</h2>
         <div class="map__wrapper">
           <div class="map__image">
             <iframe class="map__iframe" title="карта" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002867!2d30.320858715769422!3d59.93871916905457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1594148436085!5m2!1sru!2sru" width="560" height="306" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -462,8 +424,9 @@
         </ul>
       </div>
     </footer>
-    <script src="js/main.js"></script>
     <script src="https://unpkg.com/imask"></script>
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
     <script>
       var elements = document.querySelectorAll('#tel');
       for (var i = 0; i < elements.length; i++) {

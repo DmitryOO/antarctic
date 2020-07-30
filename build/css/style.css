@@ -263,6 +263,12 @@ html {
       margin-top: -123px;
       padding-top: 0; } }
 
+@media (min-width: 1367px) {
+  .page-header__top-block {
+    max-width: 1160px; }
+  .page-header__tours {
+    max-width: 970px; } }
+
 .header-menu {
   padding: 0;
   display: -webkit-box;
@@ -405,7 +411,7 @@ html {
     margin-bottom: 0; } }
 
 .socials {
-  min-width: 150px;
+  width: 150px;
   padding-left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -446,7 +452,7 @@ html {
 
 @media (max-width: 1023px) {
   .socials {
-    min-width: 0; }
+    width: 110px; }
   .socials__item {
     margin-left: 23px; }
   .socials__link--facebook {
@@ -508,7 +514,16 @@ html {
   display: flex; }
 
 .journey__image {
-  margin-left: 88px; }
+  margin-left: 88px;
+  width: 560px;
+  height: 301px;
+  overflow: hidden;
+  position: relative; }
+
+.journey__image img {
+  position: absolute;
+  top: -35px;
+  left: -100px; }
 
 .journey__description {
   -ms-flex-preferred-size: 512px;
@@ -529,10 +544,14 @@ html {
     padding-left: 45px;
     padding-right: 45px; }
   .journey__image {
+    width: 324px;
+    height: 264px;
     margin-left: 30px; }
   .journey__image img {
-    width: 324px;
-    height: 264px; }
+    left: -72px;
+    top: 0;
+    width: 470px;
+    height: 265px; }
   .journey__description {
     -ms-flex-preferred-size: 324px;
         flex-basis: 324px;
@@ -550,16 +569,19 @@ html {
     padding-top: 67px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 60px;
+    padding-bottom: 67px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
   .journey__image {
+    width: 290px;
+    height: 186px;
     margin-left: auto;
     margin-right: auto; }
   .journey__image img {
-    width: 290px;
+    left: -19px;
+    width: 328px;
     height: 186px; }
   .journey__description {
     -ms-flex-preferred-size: auto;
@@ -757,6 +779,10 @@ html {
   .advantages__description {
     line-height: 149%; } }
 
+@media (min-width: 1367px) {
+  .advantages__list {
+    max-width: 1160px; } }
+
 .cruises {
   background-color: #f9fbfd;
   color: #011c40;
@@ -820,7 +846,41 @@ html {
 .cruises__image {
   width: 260px;
   height: 386px;
+  position: relative;
   overflow: hidden; }
+
+.cruises__image img {
+  position: absolute; }
+
+.cruises__image--astoria img {
+  left: -125px;
+  width: 520px; }
+
+.cruises__image--aline img {
+  left: -146px; }
+
+.cruises__image--atlantis img {
+  left: -22px;
+  width: 304px; }
+
+.cruises__image--odyssey img {
+  left: -125px;
+  width: 455px;
+  height: 418px; }
+
+.cruises__image--olympia img {
+  left: -118px; }
+
+.cruises__image--aurora img {
+  left: -104px; }
+
+.cruises__image--leonor img {
+  left: -145px; }
+
+.cruises__image--minion img {
+  left: -177px;
+  width: 555px;
+  height: 520px; }
 
 .cruises__info {
   visibility: hidden;
@@ -903,9 +963,31 @@ html {
   .cruises__image {
     width: 309px;
     height: 386px; }
-  .cruises__image img {
-    width: 309px;
-    height: 386px; }
+  .cruises__image--astoria img {
+    left: -112px;
+    width: 540px; }
+  .cruises__image--atlantis img {
+    left: 0;
+    width: 309px; }
+  .cruises__image--odyssey img {
+    left: -96px;
+    width: 460px;
+    height: 452px;
+    top: 0; }
+  .cruises__image--olympia img {
+    left: -144px;
+    height: 455px;
+    width: 599px;
+    top: -4px; }
+  .cruises__image--aurora img {
+    left: -100px; }
+  .cruises__image--leonor img {
+    left: -171px;
+    width: 605px; }
+  .cruises__image--minion img {
+    left: -201px;
+    width: 639px;
+    height: 522px; }
   .cruises__item:nth-child(3n) {
     margin-right: 30px; }
   .cruises__item:nth-last-child(1) {
@@ -946,8 +1028,26 @@ html {
     margin-bottom: 40px; }
   .cruises__image {
     width: 270px; }
-  .cruises__image img {
-    width: 270px; }
+  .cruises__image--astoria img {
+    left: -133px; }
+  .cruises__image--atlantis img {
+    left: -19px; }
+  .cruises__image--odyssey img {
+    left: -99px;
+    width: 427px; }
+  .cruises__image--olympia img {
+    left: -129px;
+    width: 528px;
+    top: -4px; }
+  .cruises__image--aurora img {
+    left: -119px; }
+  .cruises__image--leonor img {
+    left: -150px;
+    width: 530px; }
+  .cruises__image--minion img {
+    left: -193px;
+    width: 596px;
+    height: 520px; }
   .cruises__item:nth-child(3n) {
     margin-right: 0; }
   .cruises__item {
