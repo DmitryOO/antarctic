@@ -9,7 +9,7 @@
 }
 
 .page-footer__wrapper {
-  max-width: 1366px;
+  max-width: 1380px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 7.7%;
@@ -68,5 +68,12 @@
   .page-footer__logo img {
     width: 42px;
     height: 22px;
+  }
+}
+
+@media (min-width: 1375px) {
+  .page-footer__wrapper {
+    padding-left: 104px;
+    padding-right: 117px;
   }
 }

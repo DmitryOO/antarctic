@@ -174,16 +174,17 @@
       width: 42px;
       height: 22px;
     }
+
+    .page-header__logo-white {
+      width: 42px;
+      height: 22px;
+    }
+
+    path {
+      fill: $darkcol;
+    }
   }
 
-  .page-header__logo-white {
-    display: none;
-  }
-
-  .page-header__logo-mobile-menu {
-    display: block;
-    margin-bottom: 41px;
-  }
 
   .page-header__top-block {
     min-height: 299px;

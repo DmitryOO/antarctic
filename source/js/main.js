@@ -7,18 +7,19 @@
   var headerTop = document.querySelector('.page-header__top-block');
   var openButton = document.querySelector('.page-header__toggle--open');
   var closeButton = document.querySelector('.page-header__toggle--close');
-  var mobileLogo = document.querySelector('.page-header__logo-mobile-menu');
+  var mobileLogo = document.querySelector('.page-header__logo-white');
   var logo = document.querySelector('.page-header__logo');
-  var logoWhite = document.querySelector('.page-header__logo-white');
+  var logoPath = mobileLogo.querySelectorAll('path');
   var closeMenu = function () {
     logo.style.display = 'block';
-    mobileLogo.style.display = 'none';
+    logoPath.forEach(function (item) {
+      item.style.fill = '#f9fbfd';
+    });
     headerMenu.classList.add('visually-hidden');
     closeButton.classList.remove('page-header__toggle--close');
     closeButton.classList.add('page-header__toggle--open');
     openButton.style.display = 'block';
     headerTop.style.backgroundColor = 'transparent';
-    logoWhite.style.display = 'block';
     closeButton.addEventListener('click', openMenu);
     closeButton.removeEventListener('click', closeMenu);
   };
@@ -31,8 +32,9 @@
     closeButton.classList.remove('visually-hidden');
     closeButton.classList.add('page-header__toggle--close');
     closeButton.addEventListener('click', closeMenu);
-    mobileLogo.style.display = 'block';
-    logoWhite.style.display = 'none';
+    logoPath.forEach(function (item) {
+      item.style.fill = '#011c40';
+    });
     closeButton.removeEventListener('click', openMenu);
   };
   var activateJS = function () {
@@ -43,8 +45,9 @@
     headerTop.style.backgroundColor = 'transparent';
     headerMenu.classList.add('visually-hidden');
     logo.style.display = 'block';
-    logoWhite.style.display = 'block';
-    mobileLogo.style.display = 'none';
+    logoPath.forEach(function (item) {
+      item.style.fill = '#f9fbfd';
+    });
     closeButton.classList.remove('page-header__toggle--close');
     openButton.style.display = 'block';
     openButton.addEventListener('click', openMenu);
@@ -70,4 +73,11 @@
   window.addEventListener('resize', onResizeJS);
 })();
 
-
+(function () {
+  var elements = document.querySelectorAll('#tel');
+  for (var i = 0; i < elements.length; i++) {
+    new IMask(elements[i], {
+      mask: '00000000000',
+    });
+  }
+})();

@@ -71,6 +71,10 @@
   background-image: url("../img/icon-mark.svg");
 }
 
+.map__item--call:hover {
+  opacity: 0.8;
+}
+
 .map__item--call::before {
   content: "";
   width: 18px;

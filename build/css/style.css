@@ -201,11 +201,11 @@ html {
     .page-header__logo img {
       width: 42px;
       height: 22px; }
-  .page-header__logo-white {
-    display: none; }
-  .page-header__logo-mobile-menu {
-    display: block;
-    margin-bottom: 41px; }
+    .page-header__logo .page-header__logo-white {
+      width: 42px;
+      height: 22px; }
+    .page-header__logo path {
+      fill: #011c40; }
   .page-header__top-block {
     min-height: 299px;
     margin-left: 0;
@@ -308,7 +308,7 @@ html {
   padding-bottom: 33px; }
 
 .page-footer__wrapper {
-  max-width: 1366px;
+  max-width: 1380px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 7.7%;
@@ -363,6 +363,11 @@ html {
   .page-footer__logo img {
     width: 42px;
     height: 22px; } }
+
+@media (min-width: 1375px) {
+  .page-footer__wrapper {
+    padding-left: 104px;
+    padding-right: 117px; } }
 
 .footer-menu {
   margin-right: auto;
@@ -1129,6 +1134,9 @@ html {
   left: -28px;
   z-index: 10;
   background-image: url("../img/icon-mark.svg"); }
+
+.map__item--call:hover {
+  opacity: 0.8; }
 
 .map__item--call::before {
   content: "";
